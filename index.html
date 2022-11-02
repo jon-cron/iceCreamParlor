@@ -16,18 +16,123 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
-    <header>
-      <!-- place navbar here -->
+  <body class="bg-dark text-light">
+    <header class="container-fluid">
+      <section class="row">
+        <div class="col-12 navbar justify-content-center">
+          <h1>Ice Cream Parlor</h1>
+        </div>
+      </section>
     </header>
-    <main></main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
+    <main class="container-fluid">
+      <section class="row justify-content-evenly">
+        <!-- SECTION Left side -->
+        <div class="col-5 border p-2">
+          <section class="row">
+            <div class="col-12 d-flex justify-content-between">
+              <h6>Name</h6>
+              <h6>Qty</h6>
+              <h6>Price</h6>
+              <h6>Total</h6>
+            </div>
+          </section>
+          <section class="row">
+            <!-- STUB template below -->
+            <div class="col-12" id="cart">
+              <!-- <div class="d-flex justify-content-between">
+                <h6>Name</h6>
+                  <h6>Qty</h6>
+                  <h6>Price</h6>
+                  <h6>Total</h6>
+              </div> -->
+            </div>
+            <!-- STUB template above -->
+            <div class="text-end">
+              <div class="d-flex justify-content-end">
+                <h2>Total: <span id="total"></span></h2>
+                <p></p>
+              </div>
+              <button class="btn btn-primary" onclick="pay()">Pay</button>
+            </div>
+          </section>
+        </div>
+        <!-- SECTION END -->
+        <!-- SECTION Right side -->
+        <div class="col-6 border p-2">
+          <section class="row" id="toppings-item">
+            <!-- <div class="col-12"><h1>Toppings</h1></div>
+            <div
+              class="col-6 col-md-3 border m-2"
+              onclick="selectTopping('sprinkles')"
+            >
+              <img
+                class="img-fluid"
+                src="https://images.unsplash.com/photo-1516746924755-babd21844370?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8c3ByaW5rbGVzfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                alt=""
+              />
+              <div class="d-flex justify-content-between">
+                <h4>Sprinkles</h4>
+                <h4>$2</h4>
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-3 border m-2"
+              onclick="selectTopping('chocolate chips')"
+            >
+              <img
+                class="img-fluid"
+                src="https://media.istockphoto.com/photos/chocolate-chips-background-picture-id157484996?b=1&k=20&m=157484996&s=170667a&w=0&h=nqt6ctQfi2AhA5HOd7PEZgNj4gzwTEH7gB-xG11HS1A="
+                alt=""
+              />
+              <div class="d-flex justify-content-between">
+                <h4>Chocolate Chips</h4>
+                <h4>$3</h4>
+              </div>
+            </div>
+            <div
+              class="col-6 col-md-3 border m-2"
+              onclick="selectTopping('gummy worms')"
+            >
+              <img
+                class="img-fluid"
+                src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Sprinkles2.jpg"
+                alt=""
+              />
+              <div class="d-flex justify-content-between">
+                <h4>Gummy Worms</h4>
+                <h4>$10</h4>
+              </div>
+            </div>
+            <div class="col-12"><h1>Vessel</h1></div>
+            <div
+              class="col-6 col-md-3 border m-2"
+              onclick="selectVessel('waffle cone')"
+            >
+              <img
+                class="img-fluid"
+                src="https://thiscatdoesnotexist.com"
+                alt=""
+              />
+              <div class="d-flex justify-content-between">
+                <h4>Waffle Cone</h4>
+                <h4>Price</h4>
+              </div>
+            </div> -->
+          </section>
+          <section class="row" id="vessels-item"></section>
+          <section class="row" id="iceCreams-item"></section>
+        </div>
+        <!-- SECTION END -->
+      </section>
+    </main>
+    <footer></footer>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
       integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
